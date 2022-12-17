@@ -1,14 +1,15 @@
-import { MeshStandardMaterial } from "three";
+import { PointsMaterial } from "three";
 
 const createMaterial = () => {
-  const textMaterial = new MeshStandardMaterial({
-    color: "orange",
-  });
-  const sideMaterial = new MeshStandardMaterial({
-    color: "red",
-  });
+  // const textMaterial = new MeshStandardMaterial({
+  //   color: "orange",
+  // });
+  // const sideMaterial = new MeshStandardMaterial({
+  //   color: "red",
+  // });
+  const piontsMaterial = new PointsMaterial({ size: 0.5 });
 
-  return { textMaterial, sideMaterial };
+  return { piontsMaterial };
 };
 
 export default createMaterial;
